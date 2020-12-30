@@ -22,17 +22,40 @@ console.log(quotes)
 /***
  * `getRandomQuote` function
 ***/
-const getRandomQuote = function(quotes) {
-  let randomNumber = Math.floor( Math.random() * quotes.length );
-  let randomQuote = randomNumber[quotes];
-  console.log(getRandomQuote);
+// const getRandomQuote = function(quotes) {
+//   let randomNumber = Math.floor( Math.random() * quotes.length );
+//   let randomQuote = randomNumber[quotes];
+//   console.log(getRandomQuote);
+// }
+
+function getRandomQuote(arr) {
+  let randomNumber = Math.floor( Math.random() * arr.length );
+  let randomQuote = arr[randomNumber];
+  console.log(randomQuote);
 }
 
+getRandomQuote(quotes);
 
 /***
  * `printQuote` function
 ***/
-
+//create a function named printQuote  
+function printQuote() {
+  let storedQuote = getRandomQuote(quotes); // a variable to store a random quote object 
+  let html = ''; 
+    if (storedQuote[show, date]) {
+      html += `<p class="quote"> ${storedQuote.quote} </p>
+               <p class="source"> ${storedQuote.author} 
+                  <span class="show"> ${storedQuote.show} </span>
+                  <span class="date"> ${storedQuote.date} </span>
+               </p>`
+    } else {
+      html += `<p class="quote"> ${storedQuote.quote} </p>
+            <p class="source"> ${storedQuote.author} </p>`;
+    }
+   
+  document.getElementById('quote-box').innerHTML = printQuote; 
+};  
 
 
 /***
@@ -40,4 +63,4 @@ const getRandomQuote = function(quotes) {
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-// document.getElementById('load-quote').addEventListener("click", printQuote, false);
+ document.getElementById('load-quote').addEventListener("click", printQuote, false);
