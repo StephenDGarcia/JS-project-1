@@ -33,7 +33,6 @@ function getRandomQuote(arr) {
   let randomNumber = Math.floor( Math.random() * arr.length ); //finding a random number using the length of the quotes
   let randomQuote = arr[randomNumber];
   console.log(randomQuote);
-  //quote = randomQuote;
 }
 
 getRandomQuote(quotes);
@@ -44,7 +43,6 @@ getRandomQuote(quotes);
 //create a function named printQuote  
 function printQuote() {
   let storedQuote = getRandomQuote(quotes); // a variable to store a random quote object 
-  let randomQuote = 
   let html = ''; 
     if (storedQuote[quote, author, show, date]) { //looking through the quotes to see if it has the additional properties
       html += `<p class="quote"> ${storedQuote.quote} </p>
