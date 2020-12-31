@@ -69,8 +69,9 @@ function printQuote() {
     if (storedQuote.citation !== '') {
     `<span> ${storedQuote.citation} </span>`; }
     if (storedQuote.year !== '') {
-    `<span> ${storedQuote.year} </span>`; }
-    </p>`;
+    `<span> ${storedQuote.year} </span>` }
+    </p>`
+    ;
 
   document.getElementById('quote-box').innerHTML = html; 
 };  
