@@ -65,7 +65,7 @@ function printQuote() {
   let html = ''; 
   html += `
    <p class="quote"> ${storedQuote.quote} </p>
-   <p class="source"> ${storedQuote source}` 
+   <p class="source"> ${storedQuote.source}` 
     
    if (storedQuote.citation !== '') {
     html += `<span> ${storedQuote.citation} </span>`; 
